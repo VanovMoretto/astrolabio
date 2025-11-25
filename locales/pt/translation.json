@@ -3,7 +3,12 @@
   "introText": "Bem-vindo ao Astrolábio, seu guia digital para uma estada perfeita. Explore nossos serviços, horários e facilidades de forma rápida e intuitiva. Estamos aqui para tornar sua experiência inesquecível.",
   "modal": {
     "laundryTitle": "Serviço de Lava e Seca",
-    "frigobarTitle": "Cardápio Frigobar"
+    "frigobarTitle": "Cardápio Frigobar",
+    "table": {
+      "qty": "Qtd.",
+      "item": "Produto",
+      "unitPrice": "Valor Unit."
+    }
   },
   "footer": {
     "copyright": "© 2024 Todos os direitos reservados",
@@ -57,7 +62,7 @@
     "map": {
       "title": "Mapa do Hotel",
       "floorSCTitle": "Andar SC",
-      "floorSCItems": "Café da manhã<br />Academia<br />Piscina<br />Sauna seca e sauna a vapor<br />Sala de jogos<br />Massagista - Edília",
+      "floorSCItems": "Café da manhã<br />Academia<br />Piscina<br />Sauna seca e sauna a vapor <br />Salas de reunião <br />Sala de jogos<br />Massagista - Edília",
       "floorPTitle": "Andar P",
       "floorPItems": "Recepção<br />Restaurante Irius<br />Bar Irius<br />Centro de Eventos<br />Lobby",
       "floorM1Title": "Andar -1",

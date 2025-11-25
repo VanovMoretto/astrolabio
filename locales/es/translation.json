@@ -3,7 +3,12 @@
   "introText": "Bienvenido a Astrolábio, su guía digital para una estancia perfecta. Explore nuestros servicios, horarios e instalaciones de forma rápida e intuitiva. Estamos aquí para hacer que su experiencia sea inolvidable.",
   "modal": {
     "laundryTitle": "Servicio de Lavandería",
-    "frigobarTitle": "Menú del Minibar"
+    "frigobarTitle": "Menú del Minibar",
+    "table": {
+      "qty": "Cant.",
+      "item": "Producto",
+      "unitPrice": "Valor Unit."
+    }
   },
   "footer": {
     "copyright": "© 2024 Todos los derechos reservados",
@@ -57,7 +62,7 @@
     "map": {
       "title": "Mapa del Hotel",
       "floorSCTitle": "Piso SC",
-      "floorSCItems": "Desayuno<br />Gimnasio<br />Piscina<br />Sauna seca y sauna a vapor<br />Sala de juegos<br />Masajista - Edília",
+      "floorSCItems": "Desayuno<br />Gimnasio<br />Piscina<br />Sauna seca y sauna a vapor <br />Salas de reunión <br />Sala de juegos<br />Masajista - Edília",
       "floorPTitle": "Piso P",
       "floorPItems": "Recepción<br />Restaurante Irius<br />Bar Irius<br />Centro de Eventos<br />Lobby",
       "floorM1Title": "Piso -1",
@@ -134,7 +139,7 @@
       "cashew": "Anacardos",
       "chocolate": "Chocolate",
       "kitkat": "Chocolate Kit Kat",
-      "chips": "Papas Fritas"
+      "chips": "Papas"
     }
   },
   "laundry": {
