@@ -62,7 +62,7 @@
     "map": {
       "title": "Mapa do Hotel",
       "floorSCTitle": "Andar SC",
-      "floorSCItems": "Café da manhã<br />Academia<br />Piscina<br />Sauna seca e sauna a vapor<br />Sala de jogos<br />Massagista - Edília",
+      "floorSCItems": "Café da manhã<br />Academia<br />Piscina<br />Sauna seca e sauna a vapor <br />Salas de reunião <br />Sala de jogos<br />Massagista - Edília",
       "floorPTitle": "Andar P",
       "floorPItems": "Recepção<br />Restaurante Irius<br />Bar Irius<br />Centro de Eventos<br />Lobby",
       "floorM1Title": "Andar -1",

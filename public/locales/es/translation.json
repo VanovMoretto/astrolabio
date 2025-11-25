@@ -62,7 +62,7 @@
     "map": {
       "title": "Mapa del Hotel",
       "floorSCTitle": "Piso SC",
-      "floorSCItems": "Desayuno<br />Gimnasio<br />Piscina<br />Sauna seca y sauna a vapor<br />Sala de juegos<br />Masajista - Edília",
+      "floorSCItems": "Desayuno<br />Gimnasio<br />Piscina<br />Sauna seca y sauna a vapor <br />Salas de reunión <br />Sala de juegos<br />Masajista - Edília",
       "floorPTitle": "Piso P",
       "floorPItems": "Recepción<br />Restaurante Irius<br />Bar Irius<br />Centro de Eventos<br />Lobby",
       "floorM1Title": "Piso -1",
