@@ -3,6 +3,13 @@ import styles from "./Modal.module.css";
 import { X } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
+/**
+ * Componente Modal reutilizável.
+ * Espera receber 'data' no formato:
+ * [
+ * { category: "Nome da Categoria", items: [{ name: "Item", price: "R$ 10", qty: 1 (opcional) }] }
+ * ]
+ */
 function Modal({ isOpen, onClose, title, data }) {
   const { t } = useTranslation();
 
@@ -10,14 +17,18 @@ function Modal({ isOpen, onClose, title, data }) {
     return null;
   }
 
+  // Verifica dinamicamente se o primeiro item dos dados possui a propriedade 'qty' (quantidade).
+  // Isso define se a tabela renderizada terá a coluna de Quantidade ou não.
+  // Útil para diferenciar entre lista de preços (Lavanderia) e lista de itens com estoque/unidade (Frigobar).
   const hasQuantity = data[0]?.items[0]?.qty !== undefined;
 
   return (
     <div className={styles.modalBackdrop} onClick={onClose}>
+      {/* stopPropagation evita que clicar dentro do modal feche ele (clique no backdrop fecha) */}
       <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
         <div className={styles.modalHeader}>
           <h2 className={styles.modalTitle}>{title}</h2>
-          <button className={styles.closeButton} onClick={onClose}>
+          <button className={styles.closeButton} onClick={onClose} aria-label="Fechar">
             <X size={24} />
           </button>
         </div>
@@ -48,6 +59,7 @@ function Modal({ isOpen, onClose, title, data }) {
                       {hasQuantity && (
                         <td className={styles.qtyCol}>{item.qty}</td>
                       )}
+                      {/* Ajusta o padding se não houver coluna de quantidade */}
                       <td className={!hasQuantity ? styles.productColOnly : ""}>
                         {item.name}
                       </td>

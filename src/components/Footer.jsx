@@ -23,7 +23,7 @@ function Footer() {
       <div className={styles.footerCopyright}>
         <small>{t("footer.copyright")}</small>
       </div>
-      <div className={styles.footerDev}>
+      {/* <div className={styles.footerDev}>
         {t("footer.devCredit")}
         <a
           href="https://SEU_LINK_DO_LINKEDIN_AQUI"
@@ -32,7 +32,7 @@ function Footer() {
         >
           Vanov Moretto
         </a>
-      </div>
+      </div> */}
     </footer>
   );
 }

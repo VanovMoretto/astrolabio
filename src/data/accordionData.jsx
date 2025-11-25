@@ -2,6 +2,7 @@ import React from "react";
 import { useTranslation, Trans } from "react-i18next";
 import { FaWhatsapp } from "react-icons/fa";
 import SubAccordion from "../components/SubAccordion";
+// Ícones importados da biblioteca lucide-react
 import {
   Wifi,
   Clock,
@@ -19,6 +20,12 @@ import {
   Baby,
 } from "lucide-react";
 
+/* COMPONENTES DE CONTEÚDO
+  Cada componente abaixo representa o conteúdo interno de uma das abas do Accordion.
+  Eles utilizam o hook useTranslation para buscar textos e o componente Trans
+  para permitir interpolação de tags HTML (como <strong>) dentro das strings de tradução.
+*/
+
 const ContentInternet = () => {
   const { t } = useTranslation();
   return (
@@ -28,6 +35,7 @@ const ContentInternet = () => {
         {t("accordion.internet.wifiDesc")}
         <small>
           <br />
+          {/* Trans permite renderizar componentes dentro da string traduzida. <1> mapeia para <strong> */}
           <Trans
             i18nKey="accordion.internet.wifiNet"
             components={{ 1: <strong /> }}
@@ -98,6 +106,7 @@ const ContentRestaurante = ({ onOpenFrigobarModal }) => {
         <br />
         {t("accordion.restaurant.roomServiceHours")}
       </p>
+      {/* Botão para link externo (Goomer) */}
       <div style={{ textAlign: "center", margin: "10px 0" }}>
         <button
           className="button-primary"
@@ -113,6 +122,7 @@ const ContentRestaurante = ({ onOpenFrigobarModal }) => {
         <br />
         {t("accordion.restaurant.minibarDesc")}
       </p>
+      {/* Botão que dispara a abertura do modal interno (recebido via props) */}
       <div style={{ textAlign: "center", margin: "10px 0" }}>
         <button className="button-primary" onClick={onOpenFrigobarModal}>
           {t("accordion.restaurant.menuButton")}
@@ -255,6 +265,7 @@ const ContentPoliticas = () => {
   return (
     <>
       <div style={{ padding: "10px 0 0 0" }}>
+        {/* Uso de SubAccordion para organizar políticas extensas */}
         <SubAccordion
           icon={<Lock size={20} />}
           title={t("accordion.policies.safeTitle")}
