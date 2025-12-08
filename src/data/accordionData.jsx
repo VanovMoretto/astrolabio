@@ -86,6 +86,14 @@ const ContentCafe = () => {
         <br />
         {t("accordion.breakfast.weekendsTime")}
       </p>
+      <small style={{ fontSize: "10px"}}>
+        {t("accordion.breakfast.breakfastFootnote.line1")} <br />
+        {t("accordion.breakfast.breakfastFootnote.line2")}
+        <Trans
+          i18nKey="accordion.breakfast.breakfastFootnote.line3"
+          components={{ 1: <strong /> }}
+        />
+      </small>
     </>
   );
 };
