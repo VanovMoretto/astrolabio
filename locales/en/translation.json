@@ -1,6 +1,6 @@
 {
   "loading": "Loading...",
-  "introText": "Welcome to Astrolábio, your digital guide for a perfect stay. Explore our services, schedules, and facilities quickly and intuitively. We are here to make your experience unforgettable.",
+  "introText": "The Astrolábio is the official directory for information, regulations, and policies of the Swan Hotéis network. Inspired by the instrument that guided navigators by the stars — among them those of the Cygnus Constellation, which also gives rise to the name Swan, in reference to the Schwan family — it symbolizes precision, orientation, and trust. Just as the astrolabe safely guided explorers, this digital directory offers the guest clear and organized navigation, connecting tradition, technology, and hospitality.",
   "modal": {
     "laundryTitle": "Laundry Service",
     "frigobarTitle": "Minibar Menu",
@@ -33,7 +33,12 @@
       "weekdaysTitle": "Monday to Friday:",
       "weekdaysTime": "06:30 AM to 10:00 AM",
       "weekendsTitle": "Weekends and Holidays:",
-      "weekendsTime": "07:00 AM to 10:30 AM"
+      "weekendsTime": "07:00 AM to 10:30 AM",
+      "breakfastFootnote": {
+        "line1": "*The daily rate includes breakfast served in the hotel restaurant. ",
+        "line2": "Breakfast served in the room will be charged R$ 50.00 per person. ",
+        "line3": "Requests can be made via extension <1>212</1>."
+      }
     },
     "restaurant": {
       "title": "Restaurant & Room Service",

@@ -1,6 +1,6 @@
 {
   "loading": "加载中...",
-  "introText": "欢迎来到 Astrolábio，您的完美住宿数字指南。快速直观地探索我们的服务、时间表和设施。我们在此为您打造难忘的体验。",
+  "introText": "Astrolábio 是 Swan Hotéis 网络的官方信息、规定和政策目录。它灵感来源于通过星星（包括天鹅座（Cygnus）中的星星，天鹅座也是 Swan 名字的来源，以纪念 Schwan 家族）指引航海家的仪器，象征着精确、方向和信任。正如星盘安全地引导探险家一样，这个数字目录为客人提供了清晰、有组织的导航，连接了传统、技术和热情好客。",
   "modal": {
     "laundryTitle": "洗衣服务",
     "frigobarTitle": "迷你吧菜单",
@@ -33,7 +33,12 @@
       "weekdaysTitle": "周一至周五:",
       "weekdaysTime": "上午 06:30 至 10:00",
       "weekendsTitle": "周末和节假日:",
-      "weekendsTime": "上午 07:00 至 10:30"
+      "weekendsTime": "上午 07:00 至 10:30",
+      "breakfastFootnote": {
+        "line1": "*每日房价包含在酒店餐厅享用的早餐。客房送餐早餐服务将收取每人 R$ 50.00 的费用。",
+        "line2": "客房送餐早餐服务将收取每人 R$ 50.00 的费用。",
+        "line3": "可通过分机 <1>212</1> 提出请求。"
+      }
     },
     "restaurant": {
       "title": "餐厅和客房服务",

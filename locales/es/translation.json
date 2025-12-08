@@ -1,6 +1,6 @@
 {
   "loading": "Cargando...",
-  "introText": "Bienvenido a Astrolábio, su guía digital para una estancia perfecta. Explore nuestros servicios, horarios e instalaciones de forma rápida e intuitiva. Estamos aquí para hacer que su experiencia sea inolvidable.",
+  "introText": "El Astrolábio es el directorio oficial de información, normas y políticas de la red Swan Hotéis. Inspirado en el instrumento que guiaba a los navegantes por las estrellas — entre ellas las de la Constelación del Cisne (Cygnus), que también da origen al nombre Swan, en referencia a la familia Schwan — simboliza precisión, orientación y confianza. Al igual que el astrolabio conducía a los exploradores con seguridad, este directorio digital ofrece al huésped una navegación clara y organizada, conectando tradición, tecnología y hospitalidad.",
   "modal": {
     "laundryTitle": "Servicio de Lavandería",
     "frigobarTitle": "Menú del Minibar",
@@ -32,8 +32,13 @@
       "description": "Nuestro delicioso desayuno se sirve en el restaurante, ubicado en el piso SC.",
       "weekdaysTitle": "Lunes a Viernes:",
       "weekdaysTime": "06:30 a 10:00",
-      "weekendsTitle": "Fines de Semana y Festivos:",
-      "weekendsTime": "07:00 a 10:30"
+      "weekendsTitle": "Fines de Semana y Días Festivos:",
+      "weekendsTime": "07:00 a 10:30",
+      "breakfastFootnote": {
+        "line1": "*La tarifa diaria incluye desayuno servido en el restaurante del hotel. ",
+        "line2": "El servicio de desayuno servido en la habitación tendrá un cargo de R$ 50,00 por persona. ",
+        "line3": "Las solicitudes se pueden realizar a través de la extensión <1>212</1>."
+      }
     },
     "restaurant": {
       "title": "Restaurante y Servicio de Habitación",
