@@ -2,6 +2,7 @@ import React from "react";
 import { useTranslation, Trans } from "react-i18next";
 import { FaWhatsapp } from "react-icons/fa";
 import SubAccordion from "../components/SubAccordion";
+import styles from "../components/Accordion.module.css";
 // Ícones importados da biblioteca lucide-react
 import {
   Wifi,
@@ -86,14 +87,18 @@ const ContentCafe = () => {
         <br />
         {t("accordion.breakfast.weekendsTime")}
       </p>
-      <small style={{ fontSize: "10px"}}>
-        {t("accordion.breakfast.breakfastFootnote.line1")} <br />
-        {t("accordion.breakfast.breakfastFootnote.line2")}
-        <Trans
-          i18nKey="accordion.breakfast.breakfastFootnote.line3"
-          components={{ 1: <strong /> }}
-        />
-      </small>
+      <div className={styles.breakfastFootnoteWrapper}>
+        <small>
+          {t("accordion.breakfast.breakfastFootnote.line1")}
+          <br />
+          {t("accordion.breakfast.breakfastFootnote.line2")}
+          <br />
+          <Trans
+            i18nKey="accordion.breakfast.breakfastFootnote.line3"
+            components={{ 1: <strong /> }}
+          />
+        </small>
+      </div>
     </>
   );
 };

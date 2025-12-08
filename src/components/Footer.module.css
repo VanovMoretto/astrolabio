@@ -10,23 +10,24 @@
     gap: 24px;
 }
 
-/* NOVO: Container para agrupar logo e contatos */
+/* Container principal */
 .footerContent {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse; /* Mobile: Logo embaixo, Contatos em cima */
     align-items: center;
     gap: 30px;
     width: 100%;
+    max-width: 900px;
 }
 
-/* NOVO: Layout para desktop */
-@media (min-width: 768px) {
-    .footerContent {
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: flex-start;
-        max-width: 1000px;
-    }
+/* ------------------------------------------- */
+/* BLOCO ESQUERDO (LOGO + COPYRIGHT) */
+/* ------------------------------------------- */
+.footerLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 .footerLogo img {
@@ -35,16 +36,48 @@
     opacity: 0.9;
 }
 
-.footerLogo {
-    margin-bottom: 0; /* Removido o margin-bottom desnecessário com o novo layout */
+.footerCopyright {
+    font-size: 0.8rem;
+    opacity: 0.7;
 }
 
-/* NOVO: Estilos para o bloco de contatos */
-.footerContacts {
+/* ------------------------------------------- */
+/* BLOCO DIREITO (CONTATOS + SOCIAL) */
+/* ------------------------------------------- */
+.footerRight {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Centraliza os blocos (Social e Telefones) horizontalmente */
     gap: 20px;
+}
+
+/* Bloco dos telefones */
+.phoneContacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Mantém os números alinhados à esquerda entre si */
+    gap: 10px;
+    font-size: 0.9rem;
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--dourado-swan);
+    opacity: 0.8;
+}
+
+.contactItem a {
+    color: var(--dourado-swan);
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.contactItem a:hover {
+    opacity: 1;
+    text-decoration: underline;
 }
 
 .socialIcons {
@@ -62,34 +95,53 @@
     opacity: 1;
 }
 
-.phoneContacts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    font-size: 0.9rem;
+/* ------------------------------------------- */
+/* SEPARADOR (LINHA) */
+/* ------------------------------------------- */
+/* Configuração Padrão (Mobile): Linha Horizontal */
+.separator {
+    display: block;
+    width: 100%;        /* Ocupa a largura disponível */
+    max-width: 300px;   /* Limite para não ficar gigante no tablet */
+    height: 1px;        /* Altura da linha */
+    background-color: var(--dourado-swan);
+    opacity: 0.3;       /* Um pouco mais suave */
+    margin: 10px 0;     /* Espaçamento vertical */
 }
 
-.phoneContacts a {
-    color: var(--dourado-swan);
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    opacity: 0.8;
-    transition: opacity 0.2s ease-in-out;
-}
+/* ------------------------------------------- */
+/* RESPONSIVIDADE (DESKTOP) */
+/* ------------------------------------------- */
+@media (min-width: 768px) {
+    .footerContent {
+        flex-direction: row; /* Volta para linha: Logo Esq | Separador | Contatos Dir */
+        justify-content: space-between;
+        align-items: center; 
+    }
 
-.phoneContacts a:hover {
-    opacity: 1;
-    text-decoration: underline;
-}
-/* FIM DOS NOVOS ESTILOS DE CONTATO */
+    .footerLeft {
+        flex-shrink: 0; 
+        align-items: center; /* ALTERADO: Centraliza logo e texto entre si */
+        text-align: center;  /* ALTERADO: Centraliza o texto se quebrar linha */
+    }
+    
+    .footerRight {
+        align-items: center; /* Centraliza a "Rede Social" sobre os "Telefones" */
+        text-align: left;
+        padding-left: 30px;
+    }
 
-.footerCopyright {
-    margin-top: 0;
-    font-size: 0.8rem;
-    opacity: 0.7;
+    .phoneContacts {
+        align-items: flex-start; /* Garante que os números continuem alinhados à esquerda entre si */
+    }
+
+    /* Transforma a linha em Vertical no Desktop */
+    .separator {
+        width: 1px;
+        height: 100px;
+        max-width: none; /* Remove o limite de largura do mobile */
+        margin: 0 30px;
+    }
 }
 
 .footerDev {
