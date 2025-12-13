@@ -31,7 +31,9 @@ function Footer() {
             </a>
           </div>
           <div className={styles.footerCopyright}>
-            <small>{t("footer.copyright")}</small>
+            <small>
+              &copy; {new Date().getFullYear()} {t("footer.copyright")}
+            </small>
           </div>
         </div>
         <div className={styles.separator}></div>
