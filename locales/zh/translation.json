@@ -3,6 +3,7 @@
   "introText": "Astrolábio 是 Swan Hotéis 网络的官方信息、规定和政策目录。它灵感来源于通过星星（包括天鹅座（Cygnus）中的星星，天鹅座也是 Swan 名字的来源，以纪念 Schwan 家族）指引航海家的仪器，象征着精确、方向和信任。正如星盘安全地引导探险家一样，这个数字目录为客人提供了清晰、有组织的导航，连接了传统、技术和热情好客。",
   "modal": {
     "laundryTitle": "洗衣服务",
+    "laundryNote": "加急服务（当天或指定时间）价格请咨询前台。",
     "frigobarTitle": "迷你吧菜单",
     "table": {
       "qty": "数量",
@@ -25,7 +26,10 @@
       "wifiPass": "<1>密码: </1>姓氏全拼（小写）",
       "phonesTitle": "实用电话:",
       "phonesReception": "前台: <1>分机 9</1>",
-      "phonesRestaurant": "餐厅: <1>分机 1100</1>"
+      "whatsappReception": "24小时前台 WhatsApp：<1>(51) 9 9228-6457</1>",
+      "phonesRestaurant": "餐厅: <1>分机 1100</1>",
+      "phonesHotel": "酒店电话：<1>(51) 3553-2222</1>",
+      "phonesReservation": "预订中心：<1>0800 707 7106</1>"
     },
     "breakfast": {
       "title": "早餐",
@@ -41,7 +45,7 @@
       }
     },
     "restaurant": {
-      "title": "餐厅和客房服务",
+      "title": "餐饮服务",
       "restaurantTitle": "Irius Gastronomia (餐厅):",
       "hours": "周一至周五: 上午 11:30 至 下午 14:00 和 晚上 18:30 至 23:00。",
       "closedNote": "(周末和节假日关闭)",
@@ -67,21 +71,23 @@
     "map": {
       "title": "酒店地图",
       "floorSCTitle": "SC 层",
-      "floorSCItems": "早餐<br />健身房<br />游泳池<br />干蒸和湿蒸桑拿<br />  会议室 <br />游戏室<br />按摩师 - Edília",
+      "floorSCItems": "早餐<br />健身房<br />游泳池<br />干蒸和湿蒸桑拿<br />  会议室 <br />按摩师 - Edília",
       "floorPTitle": "P 层",
-      "floorPItems": "前台<br />Irius 餐厅<br />Irius 酒吧<br />活动中心<br />大堂",
+      "floorPItems": "前台<br />Irius 餐厅<br />钢琴酒吧<br />活动中心<br />大堂",
       "floorM1Title": "-1 层",
-      "floorM1Items": "停车场"
+      "floorM1Items": "停车场",
+      "floorM2Title": "-2 层",
+      "floorM2Items": "停车场"
     },
     "services": {
       "title": "服务",
       "parkingTitle": "停车场:",
-      "parkingDesc": "费用: R$ 20.00 /天。",
+      "parkingDesc": "每车每天 R$ 20.00",
       "massageTitle": "按摩师:",
       "massageDesc": "预约和价格:",
       "laundryTitle": "洗衣房:",
-      "laundryDesc": "我们提供洗衣服务。",
-      "laundryButton": "查看价格"
+      "laundryDesc": "我们提供由专业合作伙伴运营的外包洗衣服务。酒店仅作为协助方，具体服务需遵循供应商的条款和交付时间",
+      "laundryButton": "查看价目表"
     },
     "checkin": {
       "title": "入住和退房",
@@ -89,8 +95,11 @@
       "checkinTime": "下午 14:00 开始。",
       "checkoutTitle": "退房:",
       "checkoutTime": "中午 12:00 之前。",
+      "importantTitle": "重要提示:",
+      "importantNote": "提前入住 (Early Check-in) 和延迟退房 (Late Check-out) 均视酒店入住率而定。无论下述政策如何，请务必提前联系前台确认是否有空房",
       "note1": "提早入住需视供应情况而定，并可能产生额外费用。",
-      "note2": "延迟退房至下午 16:00 将收取半天房费。下午 16:00 后将收取全天房费，可停留至次日中午。需视供应情况而定。"
+      "note2": "延迟退房至下午 16:00 将收取半天房费。下午 16:00 后将收取全天房费，可停留至次日中午。需视供应情况而定。",
+      "note3": "始终视供应情况而定"
     },
     "policies": {
       "title": "酒店政策",
@@ -115,7 +124,7 @@
       "petLi8": "如果宠物单独在公寓内，将不提供清洁服务。",
       "guestsTitle": "访客政策",
       "guestsP1": "为安全起见，访客必须在前台登记。访客的过夜费将在办理入住时收取。在公共区域，则无需登记。",
-      "rulesTitle": "公寓规则",
+      "rulesTitle": "客房规则",
       "rulesP1": "<1>禁止吸烟:</1><br />严禁在客房内吸烟（包括香烟或任何衍生物）。如违反此规定，将收取 R$ 250.00 的清洁费。",
       "rulesP2": "<1>布草使用:</1><br />不当使用布草、家具或用具可能会产生额外费用。如果物品有过多污渍或损坏，将按比例收取费用。",
       "rulesP3": "<1>钥匙丢失:</1><br />如钥匙丢失或遗失，将收取 R$ 120.00 的费用。",

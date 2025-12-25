@@ -3,6 +3,7 @@
   "introText": "El Astrolábio es el directorio oficial de información, normas y políticas de la red Swan Hotéis. Inspirado en el instrumento que guiaba a los navegantes por las estrellas — entre ellas las de la Constelación del Cisne (Cygnus), que también da origen al nombre Swan, en referencia a la familia Schwan — simboliza precisión, orientación y confianza. Al igual que el astrolabio conducía a los exploradores con seguridad, este directorio digital ofrece al huésped una navegación clara y organizada, conectando tradición, tecnología y hospitalidad.",
   "modal": {
     "laundryTitle": "Servicio de Lavandería",
+    "laundryNote": "Consultar precios para servicios de Urgencia (mismo día u horario preferencial).",
     "frigobarTitle": "Menú del Minibar",
     "table": {
       "qty": "Cant.",
@@ -25,7 +26,10 @@
       "wifiPass": "<1>Contraseña: </1>Último apellido en minúsculas",
       "phonesTitle": "Teléfonos Útiles:",
       "phonesReception": "Recepción: <1>Ext. 9</1>",
-      "phonesRestaurant": "Restaurante: <1>Ext. 1100</1>"
+      "whatsappReception": "Whatsapp Recepción: <1>(51) 9 9228-6457</1>",
+      "phonesRestaurant": "Restaurante: <1>Ext. 1100</1>",
+      "phonesHotel": "Teléfono del hotel: <1>(51) 3553-2222</1>",
+      "phonesReservation": "Central de reservas: <1>0800 707 7106</1>"
     },
     "breakfast": {
       "title": "Desayuno",
@@ -41,7 +45,7 @@
       }
     },
     "restaurant": {
-      "title": "Restaurante y Servicio de Habitación",
+      "title": "Minibar, Restaurante y Servicio de Habitación",
       "restaurantTitle": "Irius Gastronomia (Restaurante):",
       "hours": "Lunes a Viernes: 11:30 a 14:00 y 18:30 a 23:00.",
       "closedNote": "(Cerrado los fines de semana y festivos)",
@@ -67,21 +71,23 @@
     "map": {
       "title": "Mapa del Hotel",
       "floorSCTitle": "Piso SC",
-      "floorSCItems": "Desayuno<br />Gimnasio<br />Piscina<br />Sauna seca y sauna a vapor <br />Salas de reunión <br />Sala de juegos<br />Masajista - Edília",
+      "floorSCItems": "Desayuno<br />Gimnasio<br />Piscina<br />Sauna seca y sauna a vapor <br />Salas de reunión <br />Masajista - Edília",
       "floorPTitle": "Piso P",
-      "floorPItems": "Recepción<br />Restaurante Irius<br />Bar Irius<br />Centro de Eventos<br />Lobby",
+      "floorPItems": "Recepción<br />Restaurante Irius<br />Piano Bar<br />Centro de Eventos<br />Lobby",
       "floorM1Title": "Piso -1",
-      "floorM1Items": "Estacionamiento"
+      "floorM1Items": "Estacionamiento",
+      "floorM2Title": "Piso -2",
+      "floorM2Items": "Estacionamiento"
     },
     "services": {
       "title": "Servicios",
       "parkingTitle": "Estacionamiento:",
-      "parkingDesc": "Costo: R$ 20,00 por día.",
+      "parkingDesc": "Costo: R$ 20,00 por día, por auto.",
       "massageTitle": "Masajista:",
       "massageDesc": "Citas y precios:",
       "laundryTitle": "Lavandería:",
-      "laundryDesc": "Ofrecemos servicio de lavandería.",
-      "laundryButton": "Ver Precios"
+      "laundryDesc": "Ofrecemos servicio de lavandería tercerizado, operado por un socio especializado. El hotel actúa como facilitador en la solicitud, sujeto a las condiciones y plazos del proveedor.",
+      "laundryButton": "Consultar lista de precios"
     },
     "checkin": {
       "title": "Check-in y Check-out",
@@ -89,8 +95,11 @@
       "checkinTime": "a partir de las 14:00.",
       "checkoutTitle": "Check-out:",
       "checkoutTime": "hasta las 12:00 (mediodía).",
+      "importantTitle": "Importante:",
+      "importantNote": "Independientemente de las políticas a continuación, es indispensable consultar la disponibilidad en Recepción para el Early Check-in y el Late Check-out, ya que estas solicitudes están siempre sujetas a la ocupación del hotel.",
       "note1": "Check-in temprano sujeto a disponibilidad y puede incluir costos adicionales.",
-      "note2": "Late check-out hasta las 16:00 se cobrará el valor de media tarifa diaria vigente. Después de las 16:00 se cobrará una tarifa diaria completa, pudiendo permanecer hasta el mediodía del día siguiente. Sujeto a disponibilidad."
+      "note2": "Late check-out hasta las 16:00 se cobrará el valor de media tarifa diaria vigente. Después de las 16:00 se cobrará una tarifa diaria completa, pudiendo permanecer hasta el mediodía del día siguiente. Sujeto a disponibilidad.",
+      "note3": "Siempre sujeto a disponibilidad."
     },
     "policies": {
       "title": "Políticas del Hotel",
@@ -115,7 +124,7 @@
       "petLi8": "La limpieza no se realizará si la mascota está sola en el apartamento.",
       "guestsTitle": "Política de Acompañantes",
       "guestsP1": "El registro de acompañantes en la recepción es obligatorio por cuestiones de seguridad. El cobro de la tasa de pernocta se realizará en el check-in del visitante. En las áreas sociales, no es necesario registrarse.",
-      "rulesTitle": "Reglas del Apartamento",
+      "rulesTitle": "Reglas de la Habitación",
       "rulesP1": "<1>No Fumador:</1><br />Está estrictamente prohibido fumar cigarrillos o cualquier derivado dentro de las habitaciones. En caso de no respetar la norma, se cobrará una tasa de higienización de R$ 250,00.",
       "rulesP2": "<1>Uso de la Lencería:</1><br />El uso inadecuado de la lencería, muebles o utensilios podrá generar costos adicionales. Si las piezas presentan suciedad excesiva o daños, se cobrará un valor proporcional.",
       "rulesP3": "<1>Pérdida de la Llave:</1><br />En caso de pérdida o extravío de la llave, se cobrará una tasa de R$ 120,00.",
