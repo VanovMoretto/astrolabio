@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 
 :root {
 
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  --azul-swan: #1f2841;
+  --azul-swan: #142341;
   --dourado-swan: #9f8f65;
   --color-primary: var(--azul-swan);
   --color-background: var(--azul-swan);

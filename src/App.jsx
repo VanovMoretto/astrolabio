@@ -41,6 +41,7 @@ function App() {
     setModalContent({
       title: t("modal.laundryTitle"),
       data: laundryPriceList,
+      note: t("modal.laundryNote")
     });
 
   const openFrigobarModal = () =>
@@ -89,6 +90,7 @@ function App() {
           onClose={closeModal}
           title={modalContent?.title}
           data={modalContent?.data}
+          note={modalContent?.note}
         />
       </div>
       <Footer />

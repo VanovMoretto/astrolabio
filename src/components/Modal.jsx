@@ -1,37 +1,40 @@
 import React from "react";
 import styles from "./Modal.module.css";
-import { X } from "lucide-react";
+import { X, AlertCircle } from "lucide-react"; // Opcional: ícone de alerta se quiser
 import { useTranslation } from "react-i18next";
 
-/**
- * Componente Modal reutilizável.
- * Espera receber 'data' no formato:
- * [
- * { category: "Nome da Categoria", items: [{ name: "Item", price: "R$ 10", qty: 1 (opcional) }] }
- * ]
- */
-function Modal({ isOpen, onClose, title, data }) {
+
+function Modal({ isOpen, onClose, title, note, data }) {
   const { t } = useTranslation();
 
   if (!isOpen || !data) {
     return null;
   }
 
-  // Verifica dinamicamente se o primeiro item dos dados possui a propriedade 'qty' (quantidade).
-  // Isso define se a tabela renderizada terá a coluna de Quantidade ou não.
-  // Útil para diferenciar entre lista de preços (Lavanderia) e lista de itens com estoque/unidade (Frigobar).
   const hasQuantity = data[0]?.items[0]?.qty !== undefined;
 
   return (
     <div className={styles.modalBackdrop} onClick={onClose}>
-      {/* stopPropagation evita que clicar dentro do modal feche ele (clique no backdrop fecha) */}
       <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
+        
+        {/* HEADER */}
         <div className={styles.modalHeader}>
           <h2 className={styles.modalTitle}>{title}</h2>
           <button className={styles.closeButton} onClick={onClose} aria-label="Fechar">
             <X size={24} />
           </button>
         </div>
+        {note && (
+          <div style={{ 
+            padding: "0 24px 10px 24px",
+            fontSize: "0.9rem",
+            color: "var(--azul-swan)",
+            fontStyle: "italic",
+            lineHeight: "1.4"
+          }}>
+            {note}
+          </div>
+        )}
 
         <div className={styles.modalBody}>
           {data.map((categoryData, index) => (
@@ -59,7 +62,6 @@ function Modal({ isOpen, onClose, title, data }) {
                       {hasQuantity && (
                         <td className={styles.qtyCol}>{item.qty}</td>
                       )}
-                      {/* Ajusta o padding se não houver coluna de quantidade */}
                       <td className={!hasQuantity ? styles.productColOnly : ""}>
                         {item.name}
                       </td>

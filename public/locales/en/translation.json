@@ -3,6 +3,7 @@
   "introText": "The Astrolábio is the official directory for information, regulations, and policies of the Swan Hotéis network. Inspired by the instrument that guided navigators by the stars — among them those of the Cygnus Constellation, which also gives rise to the name Swan, in reference to the Schwan family — it symbolizes precision, orientation, and trust. Just as the astrolabe safely guided explorers, this digital directory offers the guest clear and organized navigation, connecting tradition, technology, and hospitality.",
   "modal": {
     "laundryTitle": "Laundry Service",
+    "laundryNote": "Please consult rates for Express Services (same day or specific time).",
     "frigobarTitle": "Minibar Menu",
     "table": {
       "qty": "Qty",
@@ -24,8 +25,11 @@
       "wifiUser": "<1>Login: </1>room number",
       "wifiPass": "<1>Password: </1>Last surname in lowercase",
       "phonesTitle": "Useful Phones:",
-      "phonesReception": "Reception: <1>Ext. 9</1>",
-      "phonesRestaurant": "Restaurant: <1>Ext. 1100</1>"
+      "phonesReception": "Front Desk: <1>Ext. 9</1>",
+      "whatsappReception": "Front Desk Whatsapp: <1>(51) 9 9228-6457</1>",
+      "phonesRestaurant": "Restaurant: <1>Ext. 1100</1>",
+      "phonesHotel": "Hotel Phone: <1>(51) 3553-2222</1>",
+      "phonesReservation": "Reservation Center: <1>0800 707 7106</1>"
     },
     "breakfast": {
       "title": "Breakfast",
@@ -41,7 +45,7 @@
       }
     },
     "restaurant": {
-      "title": "Restaurant & Room Service",
+      "title": "Minibar, Restaurant and Room Service",
       "restaurantTitle": "Irius Gastronomia (Restaurant):",
       "hours": "Monday to Friday: 11:30 AM to 02:00 PM and 06:30 PM to 11:00 PM.",
       "closedNote": "(Closed on weekends and holidays)",
@@ -67,21 +71,23 @@
     "map": {
       "title": "Hotel Map",
       "floorSCTitle": "SC Floor",
-      "floorSCItems": "Breakfast<br />Gym<br />Swimming Pool<br />Dry and steam sauna <br />Meeting rooms <br />Game room<br />Masseuse - Edília",
+      "floorSCItems": "Breakfast<br />Gym<br />Swimming Pool<br />Dry and steam sauna <br />Meeting rooms <br />Masseuse - Edília",
       "floorPTitle": "P Floor",
       "floorPItems": "Reception<br />Irius Restaurant<br />Irius Bar<br />Event Center<br />Lobby",
       "floorM1Title": "Floor -1",
-      "floorM1Items": "Parking"
+      "floorM1Items": "Parking",
+      "floorM2Title": "Floor -2",
+      "floorM2Items": "Parking"
     },
     "services": {
       "title": "Services",
       "parkingTitle": "Parking:",
-      "parkingDesc": "Cost: R$ 20.00 per day.",
+      "parkingDesc": "Cost: R$ 20.00 per day, per car.",
       "massageTitle": "Masseuse:",
       "massageDesc": "Appointments and prices:",
       "laundryTitle": "Laundry:",
-      "laundryDesc": "We offer laundry service.",
-      "laundryButton": "View Prices"
+      "laundryDesc": "We offer third-party laundry services operated by a specialized partner. The hotel acts as a facilitator for requests, subject to the provider's terms and turnaround times.",
+      "laundryButton": "View Price List"
     },
     "checkin": {
       "title": "Check-in & Check-out",
@@ -89,8 +95,11 @@
       "checkinTime": "from 02:00 PM.",
       "checkoutTitle": "Check-out:",
       "checkoutTime": "until 12:00 PM (noon).",
+      "importantTitle": "Important:",
+      "importantNote": "Please note that Early Check-in and Late Check-out are always subject to hotel occupancy and availability. Regardless of the policies below, it is essential to consult the Front Desk in advance.",
       "note1": "Early check-in subject to availability and may include additional costs.",
-      "note2": "Late check-out until 04:00 PM will be charged half the current daily rate. After 04:00 PM, a full daily rate will be charged, allowing stay until noon the next day. Subject to availability."
+      "note2": "Late check-out until 04:00 PM will be charged half the current daily rate. After 04:00 PM, a full daily rate will be charged, allowing stay until noon the next day. Subject to availability.",
+      "note3": "Always subject to availability."
     },
     "policies": {
       "title": "Hotel Policies",
@@ -115,7 +124,7 @@
       "petLi8": "Cleaning will not be performed if the pet is alone in the apartment.",
       "guestsTitle": "Guest Policy",
       "guestsP1": "Registering guests at the reception is mandatory for security reasons. The overnight fee will be charged at the visitor's check-in. In social areas, registration is not necessary.",
-      "rulesTitle": "Apartment Rules",
+      "rulesTitle": "Guest Room Rules",
       "rulesP1": "<1>Non-Smoking:</1><br />It is strictly forbidden to smoke cigarettes or any derivatives inside the rooms. If this rule is not respected, a cleaning fee of R$ 250.00 will be charged.",
       "rulesP2": "<1>Use of Linens:</1><br />Improper use of linens, furniture, or utensils may incur additional costs. If items show excessive dirt or damage, a proportional amount will be charged.",
       "rulesP3": "<1>Loss of Key:</1><br />In case of loss or misplacement of the key, a fee of R$ 120.00 will be charged.",

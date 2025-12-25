@@ -27,6 +27,13 @@ import {
   para permitir interpolação de tags HTML (como <strong>) dentro das strings de tradução.
 */
 
+const linkStyle = {
+  fontWeight: "bold",
+  textDecoration: "none",
+  color: "inherit",
+  cursor: "pointer",
+};
+
 const ContentInternet = () => {
   const { t } = useTranslation();
   return (
@@ -59,6 +66,20 @@ const ContentInternet = () => {
         <strong>{t("accordion.internet.phonesTitle")}</strong>
         <br />
         <Trans
+          i18nKey="accordion.internet.whatsappReception"
+          components={{
+            1: (
+              <a
+                href="https://wa.me/5551992286457"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={linkStyle}
+              />
+            ),
+          }}
+        />
+        <br />
+        <Trans
           i18nKey="accordion.internet.phonesReception"
           components={{ 1: <strong /> }}
         />
@@ -66,6 +87,16 @@ const ContentInternet = () => {
         <Trans
           i18nKey="accordion.internet.phonesRestaurant"
           components={{ 1: <strong /> }}
+        />
+        <br />
+        <Trans
+          i18nKey="accordion.internet.phonesHotel"
+          components={{ 1: <a href="tel:+555135532222" style={linkStyle} /> }}
+        />
+        <br />
+        <Trans
+          i18nKey="accordion.internet.phonesReservation"
+          components={{ 1: <a href="tel:08007077106" style={linkStyle} /> }}
         />
       </p>
     </>
@@ -149,7 +180,7 @@ const ContentCheckInOut = () => {
   const { t } = useTranslation();
   return (
     <>
-      <p>
+      <p style={{ marginTop: "20px" }}>
         <strong>{t("accordion.checkin.checkinTitle")}</strong>{" "}
         {t("accordion.checkin.checkinTime")}
       </p>
@@ -158,8 +189,16 @@ const ContentCheckInOut = () => {
         {t("accordion.checkin.checkoutTime")}
       </p>
       <div style={{ padding: "10px", fontSize: "10px" }}>
+        <p>
+          <strong>{t("accordion.checkin.importantTitle")}</strong>{" "}
+          {t("accordion.checkin.importantNote")}
+        </p>
         <li>{t("accordion.checkin.note1")}</li>
         <li>{t("accordion.checkin.note2")}</li>
+        <br />
+        <span style={{ fontStyle: "italic" }}>
+          {t("accordion.checkin.note3")}
+        </span>
       </div>
     </>
   );
@@ -190,11 +229,11 @@ const ContentLazer = () => {
         <br />
         {t("accordion.leisure.saunaHours")}
       </p>
-      <p>
+      {/*<p>
         <strong>{t("accordion.leisure.gameRoomTitle")}</strong>
         <br />
         {t("accordion.leisure.gameRoomHours")}
-      </p>
+      </p> */}
       <small style={{ fontSize: "10px" }}>
         {t("accordion.leisure.note1")}
         <br />
@@ -269,6 +308,11 @@ const ContentLocais = () => {
         <br />
         <Trans i18nKey="accordion.map.floorM1Items" />
       </p>
+      <p>
+        <strong>{t("accordion.map.floorM2Title")}</strong>
+        <br />
+        <Trans i18nKey="accordion.map.floorM2Items" />
+      </p>
     </>
   );
 };
@@ -278,7 +322,7 @@ const ContentPoliticas = () => {
   return (
     <>
       <div style={{ padding: "10px 0 0 0" }}>
-        {/* Uso de SubAccordion para organizar políticas extensas */}
+        {/* Cofre */}
         <SubAccordion
           icon={<Lock size={20} />}
           title={t("accordion.policies.safeTitle")}
@@ -289,37 +333,6 @@ const ContentPoliticas = () => {
           <p>{t("accordion.policies.safeP4")}</p>
           <p>{t("accordion.policies.safeP5")}</p>
           <p>{t("accordion.policies.safeP6")}</p>
-        </SubAccordion>
-
-        <SubAccordion
-          icon={<Baby size={20} />}
-          title={t("accordion.policies.minorsTitle")}
-        >
-          <p>{t("accordion.policies.minorsP1")}</p>
-          <p>{t("accordion.policies.minorsP2")}</p>
-        </SubAccordion>
-
-        <SubAccordion
-          icon={<Dog size={20} />}
-          title={t("accordion.policies.petTitle")}
-        >
-          <ul style={{ paddingLeft: "20px", margin: 0, fontSize: "0.9rem" }}>
-            <li>{t("accordion.policies.petLi1")}</li>
-            <li>{t("accordion.policies.petLi2")}</li>
-            <li>{t("accordion.policies.petLi3")}</li>
-            <li>{t("accordion.policies.petLi4")}</li>
-            <li>{t("accordion.policies.petLi5")}</li>
-            <li>{t("accordion.policies.petLi6")}</li>
-            <li>{t("accordion.policies.petLi7")}</li>
-            <li>{t("accordion.policies.petLi8")}</li>
-          </ul>
-        </SubAccordion>
-
-        <SubAccordion
-          icon={<Users size={20} />}
-          title={t("accordion.policies.guestsTitle")}
-        >
-          <p>{t("accordion.policies.guestsP1")}</p>
         </SubAccordion>
 
         <SubAccordion
@@ -351,6 +364,40 @@ const ContentPoliticas = () => {
             />
           </p>
         </SubAccordion>
+
+        {/* Menores */}
+        <SubAccordion
+          icon={<Baby size={20} />}
+          title={t("accordion.policies.minorsTitle")}
+        >
+          <p>{t("accordion.policies.minorsP1")}</p>
+          <p>{t("accordion.policies.minorsP2")}</p>
+        </SubAccordion>
+
+        {/* Hóspedes */}
+        <SubAccordion
+          icon={<Users size={20} />}
+          title={t("accordion.policies.guestsTitle")}
+        >
+          <p>{t("accordion.policies.guestsP1")}</p>
+        </SubAccordion>
+
+        {/* Pets */}
+        <SubAccordion
+          icon={<Dog size={20} />}
+          title={t("accordion.policies.petTitle")}
+        >
+          <ul style={{ paddingLeft: "20px", margin: 0, fontSize: "0.9rem" }}>
+            <li>{t("accordion.policies.petLi1")}</li>
+            <li>{t("accordion.policies.petLi2")}</li>
+            <li>{t("accordion.policies.petLi3")}</li>
+            <li>{t("accordion.policies.petLi4")}</li>
+            <li>{t("accordion.policies.petLi5")}</li>
+            <li>{t("accordion.policies.petLi6")}</li>
+            <li>{t("accordion.policies.petLi7")}</li>
+            <li>{t("accordion.policies.petLi8")}</li>
+          </ul>
+        </SubAccordion>
       </div>
     </>
   );
@@ -362,33 +409,33 @@ export const useAccordionData = () => {
   const accordionData = [
     {
       id: 1,
+      icon: <ShieldAlert size={24} />,
+      title: t("accordion.policies.title"),
+      content: ContentPoliticas,
+    },
+    {
+      id: 2,
+      icon: <Clock size={24} />,
+      title: t("accordion.checkin.title"),
+      content: ContentCheckInOut,
+    },
+    {
+      id: 3,
       icon: <Wifi size={24} />,
       title: t("accordion.internet.title"),
       content: ContentInternet,
     },
     {
-      id: 2,
+      id: 4,
       icon: <Coffee size={24} />,
       title: t("accordion.breakfast.title"),
       content: ContentCafe,
     },
     {
-      id: 3,
+      id: 5,
       icon: <Utensils size={24} />,
       title: t("accordion.restaurant.title"),
       content: ContentRestaurante,
-    },
-    {
-      id: 4,
-      icon: <Sparkles size={24} />,
-      title: t("accordion.leisure.title"),
-      content: ContentLazer,
-    },
-    {
-      id: 5,
-      icon: <Building size={24} />,
-      title: t("accordion.map.title"),
-      content: ContentLocais,
     },
     {
       id: 6,
@@ -398,15 +445,15 @@ export const useAccordionData = () => {
     },
     {
       id: 7,
-      icon: <Clock size={24} />,
-      title: t("accordion.checkin.title"),
-      content: ContentCheckInOut,
+      icon: <Building size={24} />,
+      title: t("accordion.map.title"),
+      content: ContentLocais,
     },
     {
       id: 8,
-      icon: <ShieldAlert size={24} />,
-      title: t("accordion.policies.title"),
-      content: ContentPoliticas,
+      icon: <Sparkles size={24} />,
+      title: t("accordion.leisure.title"),
+      content: ContentLazer,
     },
   ];
 
