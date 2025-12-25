@@ -66,20 +66,6 @@ const ContentInternet = () => {
         <strong>{t("accordion.internet.phonesTitle")}</strong>
         <br />
         <Trans
-          i18nKey="accordion.internet.whatsappReception"
-          components={{
-            1: (
-              <a
-                href="https://wa.me/5551992286457"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={linkStyle}
-              />
-            ),
-          }}
-        />
-        <br />
-        <Trans
           i18nKey="accordion.internet.phonesReception"
           components={{ 1: <strong /> }}
         />
@@ -92,6 +78,20 @@ const ContentInternet = () => {
         <Trans
           i18nKey="accordion.internet.phonesHotel"
           components={{ 1: <a href="tel:+555135532222" style={linkStyle} /> }}
+        />
+        <br />
+        <Trans
+          i18nKey="accordion.internet.whatsappReception"
+          components={{
+            1: (
+              <a
+                href="https://wa.me/5551992286457"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={linkStyle}
+              />
+            ),
+          }}
         />
         <br />
         <Trans
