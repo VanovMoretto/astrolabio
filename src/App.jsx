@@ -77,7 +77,7 @@ function App() {
                 */}
                 <ContentComponent
                   onOpenLaundryModal={item.id === 6 ? openLaundryModal : null}
-                  onOpenFrigobarModal={item.id === 3 ? openFrigobarModal : null}
+                  onOpenFrigobarModal={item.id === 5 ? openFrigobarModal : null}
                 />
               </Accordion>
             );
