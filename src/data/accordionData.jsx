@@ -252,6 +252,7 @@ const ContentServicos = ({ onOpenLaundryModal }) => {
         <br />
         {t("accordion.services.parkingDesc")}
       </p>
+      {/*  APAGAR AS CHAVES { E AS BARRAS /* QUANDO VOLTAR O SERVIÇO, ADICIONAR LOCAL NO MAPA DO HOTEL TAMBÉM}
       <p>
         <strong>{t("accordion.services.massageTitle")}</strong>
         <br />
@@ -262,17 +263,14 @@ const ContentServicos = ({ onOpenLaundryModal }) => {
             textDecoration: "none",
             color: "inherit",
           }}
-          /*
           href="https://wa.me/5551999983202"
-          número da edilia, tirar comentário quando retornar, apagar href abaixo
-          */
-          href="https://wa.me/555182913687"
           rel="noopener noreferrer"
           target="_blank"
         >
           Eternity <FaWhatsapp size={15} />
         </a>
       </p>
+      */}
       <p>
         <strong>{t("accordion.services.laundryTitle")}</strong>
         <br />
