@@ -71,7 +71,7 @@
     "map": {
       "title": "Mapa del Hotel",
       "floorSCTitle": "Piso SC",
-      "floorSCItems": "Desayuno<br />Gimnasio<br />Piscina<br />Sauna seca y sauna a vapor <br />Salas de reunión <br />Masajista - Edília",
+      "floorSCItems": "Desayuno<br />Gimnasio<br />Piscina<br />Sauna seca y sauna a vapor <br />Salas de reunión",
       "floorPTitle": "Piso P",
       "floorPItems": "Recepción<br />Restaurante Irius<br />Piano Bar<br />Centro de Eventos<br />Lobby",
       "floorM1Title": "Piso -1",
@@ -92,7 +92,7 @@
     "checkin": {
       "title": "Check-in y Check-out",
       "checkinTitle": "Check-in:",
-      "checkinTime": "a partir de las 14:00.",
+      "checkinTime": "a partir de las 15:00.",
       "checkoutTitle": "Check-out:",
       "checkoutTime": "hasta las 12:00 (mediodía).",
       "importantTitle": "Importante:",

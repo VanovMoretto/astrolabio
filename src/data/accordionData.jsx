@@ -262,11 +262,15 @@ const ContentServicos = ({ onOpenLaundryModal }) => {
             textDecoration: "none",
             color: "inherit",
           }}
+          /*
           href="https://wa.me/5551999983202"
+          número da edilia, tirar comentário quando retornar, apagar href abaixo
+          */
+          href="https://wa.me/555182913687"
           rel="noopener noreferrer"
           target="_blank"
         >
-          Edília <FaWhatsapp size={15} />
+          Eternity <FaWhatsapp size={15} />
         </a>
       </p>
       <p>
