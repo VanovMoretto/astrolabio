@@ -65,13 +65,13 @@
       "saunaHours": "Abierto 24h",
       "gameRoomTitle": "Sala de juegos:",
       "gameRoomHours": "Abierto 24h",
-      "note1": "*La piscina está a temperatura ambiente.",
+      "note1": "*Piscina climatizada.",
       "note2": "**Es necesario solicitar en recepción que enciendan la sauna a vapor."
     },
     "map": {
       "title": "Mapa del Hotel",
       "floorSCTitle": "Piso SC",
-      "floorSCItems": "Desayuno<br />Gimnasio<br />Piscina<br />Sauna seca y sauna a vapor <br />Salas de reunión",
+      "floorSCItems": "Desayuno<br />Gimnasio<br />Piscina<br />Sauna seca y sauna a vapor<br />Sala de masajes<br />Salas de reunión",
       "floorPTitle": "Piso P",
       "floorPItems": "Recepción<br />Restaurante Irius<br />Piano Bar<br />Centro de Eventos<br />Lobby",
       "floorM1Title": "Piso -1",
@@ -128,7 +128,13 @@
       "rulesP1": "<1>No Fumador:</1><br />Está estrictamente prohibido fumar cigarrillos o cualquier derivado dentro de las habitaciones. En caso de no respetar la norma, se cobrará una tasa de higienización de R$ 250,00.",
       "rulesP2": "<1>Uso de la Lencería:</1><br />El uso inadecuado de la lencería, muebles o utensilios podrá generar costos adicionales. Si las piezas presentan suciedad excesiva o daños, se cobrará un valor proporcional.",
       "rulesP3": "<1>Pérdida de la Llave:</1><br />En caso de pérdida o extravío de la llave, se cobrará una tasa de R$ 120,00.",
-      "rulesP4": "<1>Voltaje:</1><br />Nuestros enchufes son de 220V."
+      "rulesP4": "<1>Voltaje:</1><br />Nuestros enchufes son de 220V.",
+      "loanTitle": "Préstamo de Objetos y Equipos",
+      "loanP1": "<1>Solicitud:</1><br />El préstamo de objetos (como adaptadores de enchufe, paraguas, planchas, entre otros) se realiza a solicitud del huésped, según disponibilidad, directamente en la recepción.",
+      "loanP2": "<1>Registro del Préstamo:</1><br />Para control interno, el artículo podrá vincularse a la habitación en el momento de su retiro.",
+      "loanP3": "<1>Plazo de Uso:</1><br />Los artículos se prestan con carácter temporal y deben devolverse en la recepción hasta el momento del check-out, salvo indicación formal del equipo.",
+      "loanP4": "<1>Responsabilidad:</1><br />El huésped es responsable del cuidado y conservación del artículo durante el período de uso.",
+      "loanP5": "<1>No Devolución, Daños o Pérdida:</1><br />En caso de no devolución o de daños que impidan su uso, se podrá realizar el cargo correspondiente a la cuenta de la habitación o el cobro directo al huésped, con base en los valores vigentes del hotel, disponibles para consulta en la recepción."
     }
   },
   "frigobar": {
