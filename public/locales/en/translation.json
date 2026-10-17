@@ -65,13 +65,13 @@
       "saunaHours": "Open 24h",
       "gameRoomTitle": "Game room:",
       "gameRoomHours": "Open 24h",
-      "note1": "*The pool is at room temperature.",
+      "note1": "*Heated pool.",
       "note2": "**You must request reception to turn on the steam sauna."
     },
     "map": {
       "title": "Hotel Map",
       "floorSCTitle": "SC Floor",
-      "floorSCItems": "Breakfast<br />Gym<br />Swimming Pool<br />Dry and steam sauna <br />Meeting rooms",
+      "floorSCItems": "Breakfast<br />Gym<br />Swimming Pool<br />Dry and steam sauna<br />Massage room<br />Meeting rooms",
       "floorPTitle": "P Floor",
       "floorPItems": "Reception<br />Irius Restaurant<br />Piano Bar<br />Event Center<br />Lobby",
       "floorM1Title": "Floor -1",
@@ -128,7 +128,13 @@
       "rulesP1": "<1>Non-Smoking:</1><br />It is strictly forbidden to smoke cigarettes or any derivatives inside the rooms. If this rule is not respected, a cleaning fee of R$ 250.00 will be charged.",
       "rulesP2": "<1>Use of Linens:</1><br />Improper use of linens, furniture, or utensils may incur additional costs. If items show excessive dirt or damage, a proportional amount will be charged.",
       "rulesP3": "<1>Loss of Key:</1><br />In case of loss or misplacement of the key, a fee of R$ 120.00 will be charged.",
-      "rulesP4": "<1>Voltage:</1><br />Our outlets are 220V."
+      "rulesP4": "<1>Voltage:</1><br />Our outlets are 220V.",
+      "loanTitle": "Loan of Objects and Equipment",
+      "loanP1": "<1>Request:</1><br />The loan of items (such as plug adapters, umbrellas, irons, among others) is available upon guest request, subject to availability, directly at the front desk.",
+      "loanP2": "<1>Loan Registration:</1><br />For internal control, the item may be linked to the guest's room at the time of pickup.",
+      "loanP3": "<1>Usage Period:</1><br />Items are loaned on a temporary basis and must be returned to the front desk by check-out, unless formally instructed otherwise by the staff.",
+      "loanP4": "<1>Responsibility:</1><br />The guest is responsible for the safekeeping and care of the item during the period of use.",
+      "loanP5": "<1>Non-Return, Damage, or Loss:</1><br />In the event of non-return or damage that prevents its use, the corresponding amount may be charged to the room account or billed directly to the guest, based on the hotel's standard rates, available for consultation at the front desk."
     }
   },
   "frigobar": {

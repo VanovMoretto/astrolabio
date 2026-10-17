@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation, Trans } from "react-i18next";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 import SubAccordion from "../components/SubAccordion";
 import styles from "../components/Accordion.module.css";
 // Ícones importados da biblioteca lucide-react
@@ -19,6 +19,7 @@ import {
   BedDouble,
   Sparkles,
   Baby,
+  PackageCheck,
 } from "lucide-react";
 
 /* COMPONENTES DE CONTEÚDO
@@ -252,25 +253,31 @@ const ContentServicos = ({ onOpenLaundryModal }) => {
         <br />
         {t("accordion.services.parkingDesc")}
       </p>
-      {/*  APAGAR AS CHAVES { E AS BARRAS /* QUANDO VOLTAR O SERVIÇO, ADICIONAR LOCAL NO MAPA DO HOTEL TAMBÉM}
       <p>
         <strong>{t("accordion.services.massageTitle")}</strong>
         <br />
-        {t("accordion.services.massageDesc")}{" "}
+        {t("accordion.services.massageDesc")} <strong>Nadia Vogel</strong>
+        <br />
         <a
-          style={{
-            fontWeight: "bold",
-            textDecoration: "none",
-            color: "inherit",
-          }}
-          href="https://wa.me/5551999983202"
+          style={linkStyle}
+          href="https://wa.me/5551995297877"
           rel="noopener noreferrer"
           target="_blank"
         >
-          Eternity <FaWhatsapp size={15} />
+          <FaWhatsapp size={15} style={{ verticalAlign: "middle" }} /> (51)
+          99529-7877
+        </a>
+        <br />
+        <a
+          style={linkStyle}
+          href="https://www.instagram.com/nadiavogelmassoterapeuta/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <FaInstagram size={15} style={{ verticalAlign: "middle" }} />{" "}
+          @nadiavogelmassoterapeuta
         </a>
       </p>
-      */}
       <p>
         <strong>{t("accordion.services.laundryTitle")}</strong>
         <br />
@@ -362,6 +369,43 @@ const ContentPoliticas = () => {
           <p>
             <Trans
               i18nKey="accordion.policies.rulesP4"
+              components={{ 1: <strong />, br: <br /> }}
+            />
+          </p>
+        </SubAccordion>
+
+        {/* Empréstimo de Objetos e Equipamentos */}
+        <SubAccordion
+          icon={<PackageCheck size={20} />}
+          title={t("accordion.policies.loanTitle")}
+        >
+          <p>
+            <Trans
+              i18nKey="accordion.policies.loanP1"
+              components={{ 1: <strong />, br: <br /> }}
+            />
+          </p>
+          <p>
+            <Trans
+              i18nKey="accordion.policies.loanP2"
+              components={{ 1: <strong />, br: <br /> }}
+            />
+          </p>
+          <p>
+            <Trans
+              i18nKey="accordion.policies.loanP3"
+              components={{ 1: <strong />, br: <br /> }}
+            />
+          </p>
+          <p>
+            <Trans
+              i18nKey="accordion.policies.loanP4"
+              components={{ 1: <strong />, br: <br /> }}
+            />
+          </p>
+          <p>
+            <Trans
+              i18nKey="accordion.policies.loanP5"
               components={{ 1: <strong />, br: <br /> }}
             />
           </p>
